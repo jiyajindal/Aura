@@ -127,7 +127,7 @@ let layer = new H.datalens.HeatmapLayer(provider, {
         value: 1,
         zoom: 9
     }, {
-        value: 100,
+        value: 10,
         zoom:16
     }],
     valueRange:  z => [0,baseCount/Math.pow(z,2 * nonLinearity)],
