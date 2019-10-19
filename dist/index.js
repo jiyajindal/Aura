@@ -1,8 +1,8 @@
 (function () {
 'use strict';
 
-var app_id = "jHAXzjdt";
-var app_code = "AJKnXv84fjrb0KIHawS0Tg";
+var app_id = "BEqTnemWoz5siTekF3D4";
+var app_code = "yWga8XgGA_Rw3HAjbAdIWg";
 
 // Initialize communication with the platform, to access your own data, change the values below
 // https://developer.here.com/documentation/geovisualization/topics/getting-credentials.html
