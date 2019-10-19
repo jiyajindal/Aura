@@ -48,7 +48,8 @@ window.addEventListener('resize', function() {
 });
 
 let provider = new H.datalens.RawDataProvider({
-    dataUrl: 'https://js.cit.datalens.api.here.com/datasets/nyc_taxi.csv',
+    //dataUrl: 'https://js.cit.datalens.api.here.com/datasets/nyc_taxi.csv',
+    dataUrl: 'https://blistersun.github.io/Aura/spatial_data.csv',
     dataToFeatures: (data, helpers) => {
         let parsed = helpers.parseCSV(data);
         let features = [];
