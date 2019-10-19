@@ -59,10 +59,10 @@ let provider = new H.datalens.RawDataProvider({
                 "type": "Feature",
                 "geometry": {
                     "type": "Point",
-                    "coordinates": [Number(row[5]), Number(row[6])]
+                    "coordinates": [Number(row[3), Number(row[2])]
                 },
                 "properties": {
-                    "passenger_count": row[3]
+                    "pollutant": row[20]
                 }
             };
             features.push(feature);
