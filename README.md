@@ -59,12 +59,12 @@ Our journey started in October 2019, when a number of enthusiastic people met at
 
 ### Our Team:
 
-Seyed Farshad Abedi (MSc in Physics): Data Selection and Web page Development
-Andrea Sotalbo (BE in Software Engineering): Data Visualization
-Jiya Jindal (BE (Honors) Aeronautical Engineering):Data Visualization
-Joshua Kahn (Bachelor in Aerospace Engineering): Alexa App Development
-Maryam Shahpasand (PHD Candidate in Computer Science):Data Selection and A.I
-Jamshid Ghasemi (Aircraft Engineer): Health and Environment Research
+- Seyed Farshad Abedi (MSc in Physics): Data Selection and Web page Development
+- Joshua Kahn (Bachelor in Aerospace Engineering): Alexa App Development
+- Maryam Shahpasand (PHD Candidate in Computer Science):Data Selection and A.I
+- Andrea Sotalbo (BE in Software Engineering): Data Visualization
+- Jiya Jindal (BE (Honors) Aeronautical Engineering):Data Visualization
+- Jamshid Ghasemi (Aircraft Engineer): Health and Environment Research
 
 
 Our features will hence allow for seamless integration of technology and ease of use in everyday life, to help our users live a more comfortable life.
