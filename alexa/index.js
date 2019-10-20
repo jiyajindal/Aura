@@ -193,18 +193,22 @@ const AirQualityLocalIntentHandler = {
         //and get the current city and time indicated by the slot.
         
         const currentCity = sessionAttributes.hasOwnProperty('currentCity') ? sessionAttributes.currentCity : 0;
-         //For the purposes of demonstration, the current two files are 'Sydney' and 'Beijing.' We need to reject cities that don't match this input for now.
+         //For the purposes of demonstration, the current city should be Sydney.
         
-        if (currentCity !== `sydney` && (currentCity !==`Beijing`)) {
-            return handlerInput.responseBuilder
-            .speak(`Sorry, we don't have ` + currentCity + ` on file. For this demo, you can select Sydney or Beijing.`)
-            .withSimpleCard(`City Not Detected`, `Please try again with either Sydney or Beijing.`)
-            .reprompt()
-            .getResponse();
+        let dateValue = handlerInput.requestEnvelope.request.intent.slots.date.value;  //get the current date to feed into data retrieval 
+        //CSV format for this Alexa demonstration is the following: 'AQD-currentCity-dateValue.csv'
+        
+        //With the real service, the data for each day would be put on the server automatically. 
+        //Howeve for this demonstration, the program will set the date manually.
+        
+        var dateNumGen = Math.round(Math.random())
+        
+        if (dateNumGen === 1) {
+            dateValue = `2019-10-20`;
+        } else {
+            dateValue = `2019-10-21`;
         }
         
-        const dateValue = handlerInput.requestEnvelope.request.intent.slots.date.value;  //get the current date to feed into data retrieval 
-        //CSV format for this Alexa demonstration is the following: 'AQD-currentCity-dateValue.csv'
         const csvName = `AQD-` + currentCity + `-` + dateValue + `.csv`;
         //ask the almighty function to retrieve the corresponding file from the AWS server
         data = await csvFromAWSToInput(csvName);
@@ -255,7 +259,7 @@ const AirQualityLocationIntentHandler = {
         //and get the current city and time indicated by each slot.
         
         const cityValue = handlerInput.requestEnvelope.request.intent.slots.queryCity.value; 
-        const dateValue = handlerInput.requestEnvelope.request.intent.slots.date.value;  //get the current date to feed into data retrieval 
+        let dateValue = handlerInput.requestEnvelope.request.intent.slots.date.value;  //get the current date to feed into data retrieval 
         
         //For the purposes of demonstration, the current two files are 'Sydney' and 'Beijing.' We need to reject cities that don't match this input for now.
         
@@ -265,6 +269,15 @@ const AirQualityLocationIntentHandler = {
             .withSimpleCard(`City Not Detected`, `Please try again with either Sydney or Beijing.`)
             .reprompt()
             .getResponse();
+        }
+        
+        //With the real service, the data for each day would be put on the server automatically. 
+        //Howeve for this demonstration, the program will set the date manually.
+        var dateNumGen = Math.round(Math.random())
+        if (dateNumGen === 1) {
+            dateValue = `2019-10-20`;
+        } else {
+            dateValue = `2019-10-21`;
         }
         
         //CSV format for this Alexa demonstration is the following: 'AQD-cityValue-dateValue.csv'
