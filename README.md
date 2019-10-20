@@ -24,7 +24,7 @@ TIn order to both make our model reliable and allow others to understand and imp
 
  
 
-Simplified, the model is based on the following assumption. Aerosol and air pollution is correlated to population density ​and to weather. For instance, more people driving around produces more pollutants. On the other hand, if the weather is rainy, less people go out, and furthermore, the rain helps to wash away air particulates. Thus by allowing an AI algorithm to learn these correlations by providing it a series of satellite and ground station pollution data, to be compared to weather and population density data. This model is then used to predict pollution levels given a location, which is used to look up the population density, as well as the weather forecast for that region. 
+Simplified, the model is based on the following assumption. Aerosol and air pollution is correlated to population density ​and to weather. For instance, more people driving around produces more pollutants. On the other hand, if the weather is rainy, less people go out, and furthermore, the rain helps to wash away air particulates. Thus by allowing an AI algorithm to learn these correlations by providing it a series of satellite and ground station pollution data, to be compared to weather and population density data. This model is then used to predict pollution levels given a location, which is used to look up the population density, as well as the weather forecast for that region. For more informatio about the model, look into MLmodel folder.
 
  
 ### Air Quality Index to Cigarette Conversion Formula
