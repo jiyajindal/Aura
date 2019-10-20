@@ -37,7 +37,7 @@ Where C is the number of cigarettes, and X is the pollutant ppm.
 
 ### Alexa
 
-Alexa is the interface that allows users to seek information by simply asking a question. For ease of use, questions and answers are short and simple. For example, after opening our application on Alexa (Aura info), user can ask:
+Alexa is the interface that allows users to seek information by simply asking a question, whether it be about how air pollutants are produced, the health effects of those pollutants or what the air quality is like in any city (both real-time and forecasted). The Alexa service can retrieve information dynamically based on which city and time is selected, and unnecessary conversations are mitigated through S3 Persistence.
 
     “What is the Air Quality today?”
 
@@ -48,10 +48,7 @@ Alexa will in turn respond with seamless, human like response. An example of thi
     “Hmmm, let me check for you!”
     *deep breath in*
     *deep coughing sound*
-    “The air quality does not look good today. Going out today will be equivalent to smoking 2.5 cigarettes. Avoid the CBD if possible, or wear a gas mask.”About Us
-
-Our journey started in October 2019, when a number of enthusiastic people met at the Sydney NASA Space App Challenge, and formed a team aiming to address the lack of transparency around air pollution for everyday people. By providing users with a user-friendly application, an intuitive grading scale, using reliable NASA and NOAA based data, and by making our models and code transparent, we believe we will be able to further help reduce the adverse health effects of air pollution in urban areas.
-
+    “The air quality does not look good today. Going out today will be equivalent to smoking 2.5 cigarettes. Avoid the CBD if possible, or wear a gas mask.”
  
 ### About Us
 
